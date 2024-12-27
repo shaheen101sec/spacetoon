@@ -385,7 +385,9 @@ https://22.spacetoon.com/ : mysql users enum vuln
 
 اسمح هذه الثغره للمخترق بالحصول على اسماء المستدمين في قاعده البيانات mysql مما يجعل له هدفاً واضحاً لاختراق كلمه مروره
 ---
+---
 
+# more laravel vulnerabilites :
 1. عدم استخدام خاصية Secure في الكوكيز.
 2. تعدد الأخطاء في استخدام JavaScript.
 3. وجود ملفات XML-RPC في موقع WordPress.
