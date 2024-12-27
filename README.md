@@ -176,21 +176,107 @@ https://web.archive.org/web/20141220164849*/http://www.spacetoon.com:80/spacetoo
 
 ## 9. ثغرة Laravel - استغلال المسارات
 
-### الوصف
-يكشف إطار العمل Laravel عن مسارات حساسة عند محاولة استغلال ثغرة استعراض المسارات (Path Traversal).
+### الوصف ثغره في نظام laravel:
 
-**مثال:**  
-`/public/admin/voyager-assets?path=../../etc/passwd`
+هناك ثغره تسمى ب path travilsal تسمح للمهاجم بالكشف عن ملفات حساسه داخل الخادم
+ولكن عند اختبارها من هذا الرابط: https://conan27.spacetoon.com/public/admin/voyager-assets?path=../..etc/passwdقد رصدها نظام laravel ولم استطتع من استغلالها ولكن حين رصدها laravel قد قام مهما بالكشف عن مسارات لا يمطرض على شخص ان يعرفها 
+
+وهذه هي :
+#2 /home/conan27/public_html/vendor/tcg/voyager/src/Http/Controllers/VoyagerController.php(91): League\Flysystem\WhitespacePathNormalizer-&gt;normalizePath(&#039;../etc/passwd&#039;)
+#3 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): TCG\Voyager\Http\Controllers\VoyagerController-&gt;assets(Object(Illuminate\Http\Request))
+#4 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\Routing\Controller-&gt;callAction(&#039;assets&#039;, Array)
+#5 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(TCG\Voyager\Http\Controllers\VoyagerController), &#039;assets&#039;)
+#6 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\Routing\Route-&gt;runController()
+#7 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\Routing\Route-&gt;run()
+#8 /home/conan27/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+
+
+وايضاً حين تدخل فيه قد يقوم بالكشف عن اوامر mysql
+
 
 ### التأثير
 تسريب تكوينات الخادم والأكواد الخلفية يعرض الموقع لمزيد من المخاطر.
+```php
+<?php
 
+
+
+declare(strict_types=1);
+
+
+
+namespace League\Flysystem;
+
+
+
+use RuntimeException;
+
+
+
+class PathTraversalDetected extends RuntimeException implements FilesystemException
+
+{
+
+    private string $path;
+
+
+
+    public function path(): string
+
+    {
+
+        return $this->path;
+
+    }
+
+
+
+    public static function forPath(string $path): PathTraversalDetected
+
+    {
+
+        $e = new PathTraversalDetected("Path traversal detected: {$path}");
+
+        $e->path = $path;
+
+
+
+        return $e;
+
+    }
+
+}
+```
+```
+Php Version
+8.2.26
+
+Laravel Version
+9.52.16
+
+Laravel Locale
+en
+
+Laravel Config Cached
+false
+App Debug
+true
+App Env
+local
+```
 ### التوصيات
 - منع استعراض المسارات عبر التحقق من إدخالات المستخدم.
 - تعيين `APP_DEBUG` إلى `false` في بيئة الإنتاج.
-
 ---
 
+---
+رابط تسجيل الدخول للوحه الادمن هذا مصاب بثغره تسمى brute force تسمخ للمهاجم بتحربه العديل من كلمات المرور الكثيرة في وقت قصير 
+لغلق هذه الثغره:
+
+وضع حد للمحاولات في كل خمس ثواني  وبعدها احعل المستخدم ينتظر دقيقه مثلاً
+
+"https://conan27.spacetoon.com/admin/login"
+
+---
 **اقتراحات:**  
 هل تريد المزيد من الإرشادات لتطبيق الحلول المقترحة مثل نشر جدار الحماية أو تحسين أمان إدخال البيانات؟ لا تتردد في السؤال!
-```
