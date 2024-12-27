@@ -44,8 +44,12 @@
 - استخدام حلول حماية متقدمة مثل أنظمة كشف التسلل (EDR).
 
 **الروابط المتأثرة (أرشيفية):**
-- `https://web.archive.org/.../1399881053461.php`
-- `https://web.archive.org/.../1399883407116.php`
+https://web.archive.org/web/20140623035444*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399881053461.php
+https://web.archive.org/web/20140623044436*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399883407116.php
+https://web.archive.org/web/20140623050300*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399882361461.php
+https://web.archive.org/web/20140623051834*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399880976139.php
+https://web.archive.org/web/20140623184338*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399882442574.php
+https://web.archive.org/web/20141220164849*/http://www.spacetoon.com:80/spacetoon/docroot/TempUserFiles/Image/1399880756732.php
 
 ---
 
