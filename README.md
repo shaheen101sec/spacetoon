@@ -151,6 +151,10 @@ https://web.archive.org/web/20141220164849*/http://www.spacetoon.com:80/spacetoo
 
 ### الوصف
 تسمح الثغرة بحقن أكواد JavaScript وHTML عبر إدخال المستخدم، مما يمكن من سرقة جلسات المستخدمين.
+```html
+<script>alert(“You are hacked”)</script>
+```
+ستظهر كلمه You are hacked للمستخدم ومن الطبيعي ان يخاف
 
 ### إثبات المفهوم (PoC)
 الكود المستخدم:  
