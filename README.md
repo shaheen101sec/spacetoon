@@ -278,5 +278,192 @@ local
 "https://conan27.spacetoon.com/admin/login"
 
 ---
+
+---
+
+الاتي مجموعه من headers الامنيه التي تساعد في جعل الموقع اكثر امن واقل عرضة للهجمات والتي ليست موحوده في عدد من مواقعكم:
+---
+```bash
+[http-missing-security-headers:content-security-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://abtal.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://mail.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://22.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://2023.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://btscontest.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://conan27.spacetoon.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://moshayafamily.spacetoon.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://moshayafamily.spacetoon.com
+```
+---
+22.spacetoon.com تقرير بسيط عن
+
+
+broken web style : https://22.spacetoon.com/
+
+---
+
+https://22.spacetoon.com/ : mysql users enum vuln
+
+اسمح هذه الثغره للمخترق بالحصول على اسماء المستدمين في قاعده البيانات mysql مما يجعل له هدفاً واضحاً لاختراق كلمه مروره
+---
+
+1. عدم استخدام خاصية Secure في الكوكيز.
+2. تعدد الأخطاء في استخدام JavaScript.
+3. وجود ملفات XML-RPC في موقع WordPress.
+
+#### التحليل الأمني
+
+##### 1. عدم استخدام خاصية Secure في الكوكيز
+- **الموقع:** spacetoon.com
+- **الكوكيز:** ["spacetoon_lXgt3lOiwVPZiQhp69esDxGX-j2P_py0", "UyqEyEdwKtJV0_6C1IOH0a2elToeb-SG"]
+- **التأثير:** عدم استخدام خاصية Secure في الكوكيز يعني أن البيانات غير محمية أثناء الانتقال بين العميل والخادم، مما يجعلها عريضة للاستثمار.
+- **الحل:** يجب ضمان استخدام خاصية Secure في جميع الكوكيز التي تحتوي على بيانات حساسة.
+
+- **الموقع:** conan27.spacetoon.com
+- **الكوكيز:** ["XSRF-TOKEN", "laravel_session"]
+- **التأثير:** نفس التأثير منذ عدم استخدام خاصية Secure في الكوكيز.
+- **الحل:** يجب ضمان استخدام خاصية Secure في جميع الكوكيز التي تحتوي على بيانات حساسة.
+
+- **الموقع:** moshayafamily.spacetoon.com
+- **الكوكيز:** ["XSRF-TOKEN", "moshayafamily_session"]
+- **التأثير:** نفس التأثير منذ عدم استخدام خاصية Secure في الكوكيز.
+- **الحل:** يجب ضمان استخدام خاصية Secure في جميع الكوكيز التي تحتوي على بيانات حساسة.
+
+##### 2. عدم استخدام خاصية HttpOnly في الكوكيز
+- **الموقع:** conan27.spacetoon.com
+- **الكوكيز:** ["XSRF-TOKEN"]
+- **التأثير:** عدم استخدام خاصية HttpOnly في الكوكيز يعني أن الكوكيز يمكن للمستخدمين وصولها من خلال الجافاسكريبت، مما يجعلها عريضة للاستثمار.
+- **الحل:** يجب ضمان استخدام خاصية HttpOnly في جميع الكوكيز التي تحتوي على بيانات حساسة.
+
+##### 3. وجود ملفات XML-RPC في موقع WordPress
+- **الموقع:** https://22.spacetoon.com/xmlrpc.php
+- **الأخطاء:**
+  - **wp-xmlrpc-pingback-detection**
+  - **wordpress-xmlrpc-listmethods**
+  - **wp-license-file**
+  - **wordpress-xmlrpc-file**
+- **التأثير:** وجود ملفات XML-RPC مكتشفة في موقع WordPress يعني أن الموقع يمكن أن يكون مكررًا بواسطة برامج تجارب القوة أو برامج تجارب القوة الآلية. هذا يمكن أن يؤدي إلى استهلاك المعدات وتوقف الخدمة.
+- **الحل:** يجب تعطيل الوظيفة XML-RPC إذا لم تكن تستخدم، أو ضمان تشفير المعلومات المرسلة والمقبلة.
+
+#### الخاتمة
+يؤدي تجاوز الأخطاء الأمنية المذكورة في التقرير إلى عدم الأمان للبيانات والمستخدمين، ويمكن أن يؤدي ذلك إلى استهلاك المعدات وتوقف الخدمة. يجب على المسؤولين بالموقع اتخاذ إجراءات فورية لحل هذه الأخطاء وضمان سلامة الموقع والمستخدمين.
+
+
+-----------------------------------
+
+#### وصف المشكلة
+تم الكشف عن طريقة وصول للموقع المحدد للتحقق من الصحة لتطبيقات لارافل، ويُظهر أن هناك تمكين للتحقق من الصحة للموقعات التالية:
+- [لارافل-تحقق-في-الحالة] [http] [متوسط] https://moshayafamily.spacetoon.com/_ignition/health-check
+- [لارافل-تحقق-في-الحالة] [http] [متوسط] https://conan27.spacetoon.com/_ignition/health-check
+
+#### تفاصيل الاستجابة
+- **محتوى الجسم:**
+  ```json
+  {
+    "can_execute_commands": true
+  }
+  ```
+
+#### تأثير المشكلة
+- **المخاطر:** تتيح هذه الميزة للمستخدمين السيئة الوصول إلى تحقق الصحة للموقعات، مما يمكن أن يؤدي إلى تحليل النظام وإيجاد المعلومات الحساسة.
+- **التهديدات:** يمكن أن يستغل المتحفزون هذه الميزة لتنفيذ أوامر مخطئة أو تنزيل ملفات مشفرة، مما يمكن أن يؤدي إلى تعطل النظام أو تسرب البيانات.
+
+#### حل المشكلة
+1. **تعطيل تحقق الصحة:**
+   - يجب على المسؤولين عن النظام تعطيل تحقق الصحة للموقعات التي تستخدم لارافل. يمكن تنفيذ ذلك من خلال تعديل إعدادات التطبيق أو استخدام أدوات التحكم في الوصول.
+
+2. **حماية ضد المستخدمين السيئة:**
+   - يجب تثبيت أدوات تحقق الصحة والأمان لتحديد وتحكم الوصول إلى النظام. يمكن استخدام أدوات مثل Fail2Ban لتحديد وحظر العناوين التي تستخدم أوامر مخطئة.
+
+3. **تحديثات الأمان:**
+   - يجب على المسؤولين عن النظام دائماً تحديث تطبيقات لارافل والبنية التحتية إلى أحدث الإصدارات لتحديد الأخطاء والضعفات الأمنية المعروفة.
+
+4. **مراقبة النظام:**
+   - يجب تثبيت أنظمة مراقبة وتسجيل الأنشطة لمراقبة النشاطات غير المعتادة والتحدث بسرعة مع أي تشكيلات أمنية.
+
+#### ملاحظات نهائية
+
+يجب على المسؤولين عن النظام الاستثمار في أدوات واستراتيجيات أمنية قوية لحماية بياناتهم وتجنب المخاطر الأمنية. يمكن أن تساعد هذه الإجراءات في تقليل المخاطر وتحسين درجة الأمان للنظام
+
+---
 **اقتراحات:**  
 هل تريد المزيد من الإرشادات لتطبيق الحلول المقترحة مثل نشر جدار الحماية أو تحسين أمان إدخال البيانات؟ لا تتردد في السؤال!
