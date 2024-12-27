@@ -384,6 +384,9 @@ broken web style : https://22.spacetoon.com/
 https://22.spacetoon.com/ : mysql users enum vuln
 
 اسمح هذه الثغره للمخترق بالحصول على اسماء المستدمين في قاعده البيانات mysql مما يجعل له هدفاً واضحاً لاختراق كلمه مروره
+```
+https://conan27.spacetoon.com/
+```
 ---
 ---
 
